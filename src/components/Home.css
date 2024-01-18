@@ -15,12 +15,15 @@
 }
 .bannerImage {
   width: 100%;
+  height: auto;
+  display: block;
   padding-top: 75px;
 }
 .sermon {
   line-height: 65px;
   background-color: var(--black);
   text-align: center;
+  margin: auto;
 }
 .sermon .sermon-heading {
   color: #fff;

@@ -6,6 +6,7 @@ import "./Home.css";
 export const Home = () => {
   return (
     <div className="home">
+    <div className="hero-container">
       <img src={bannerImage} alt="BannerImage" className="bannerImage" />
       <div className="sermon">
         <p className="sermon-heading">Latest Teaching</p>
@@ -19,6 +20,7 @@ export const Home = () => {
             </div>
           </button>
         </Link>
+      </div>
       </div>
       <section className="welcome-message-section">
         <div className="welcome-section">
