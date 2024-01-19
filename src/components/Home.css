@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 :root {
   --orange: #a74f08;
   --sunset-yellow: #ffcc00;
   --white: #fff;
   --black: #000;
+  --gray: #333;
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -21,9 +20,12 @@
 }
 .sermon {
   line-height: 65px;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   text-align: center;
-  margin: auto;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }
 .sermon .sermon-heading {
   color: #fff;
@@ -39,6 +41,7 @@
   border: 2px solid var(--orange);
   border-radius: 12px;
   background-color: var(--orange);
+  cursor: pointer;
 }
 .watch-button:hover {
   background: transparent;
@@ -59,40 +62,62 @@
 .welcome-message-section {
   text-align: center;
   line-height: 50px;
-  background-color: var(--black);
+  background-color: var(--gray);
   color: var(--white);
 }
 .welcome-section {
+  padding-top: 40px;
   text-align: center;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 .welcome-section .welcome-heading {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .welcome-section .church-name {
   font-size: 30px;
+  word-spacing: 10px;
 }
-.about-church {
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.container .about-church {
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
-  text-align: center;
-  word-spacing: 8.9px;
-  padding-left: 300px;
-  padding-right: 300px;
-  word-break: break-all;
+  width: 600px;
+  word-spacing: 4px;
 }
-
 .quick-links {
   padding-top: 20px;
   display: flex;
-  gap: 100px;
+  gap: 80px;
   justify-content: center;
 }
-.btn {
+.about-btn {
   color: white;
   background-color: var(--orange);
-  padding: 10px;
+  padding: 15px;
+  width: 160px;
   border: 1px solid var(--orange);
   border-radius: 5px;
+  cursor: pointer;
+}
+.house-btn,
+.branch-btn {
+  color: white;
+  background-color: var(--orange);
+  padding: 16px;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
+.btn:hover {
+  background: transparent;
 }
