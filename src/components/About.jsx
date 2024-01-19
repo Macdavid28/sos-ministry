@@ -70,9 +70,6 @@ export const About = () => {
           officiis eaque.
         </p>
       </div>
-      <Link to="/">
-        <button className="watch-sermon">Watch Sermon</button>
-      </Link>
     </div>
   );
 };
