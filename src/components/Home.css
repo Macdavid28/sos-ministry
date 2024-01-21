@@ -121,3 +121,66 @@
 .btn:hover {
   background: transparent;
 }
+
+@media (max-width: 1024px) {
+  .watch-button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .container .about-church {
+    width: 80%;
+  }
+
+  .quick-links {
+    gap: 40px;
+  }
+
+  .about-btn,
+  .house-btn,
+  .branch-btn {
+    width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .sermon {
+    top: 30%;
+  }
+
+  .watch-button {
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .welcome-message-section {
+    line-height: 30px;
+  }
+
+  .welcome-section {
+    padding-top: 10px;
+  }
+
+  .welcome-section .church-name {
+    font-size: 20px;
+    word-spacing: 3px;
+  }
+
+  .container .about-church {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 100%;
+  }
+
+  .quick-links {
+    gap: 20px;
+  }
+
+  .about-btn,
+  .house-btn,
+  .branch-btn {
+    padding: 10px;
+    width: 120px;
+  }
+}
