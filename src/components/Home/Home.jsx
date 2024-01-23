@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import bannerImage from "../assets/banner.jpg";
+import bannerImage from "./assets/banner.jpg";
 import "./Home.css";
+import Quicklink from "./quicklink";
 
 export const Home = () => {
   return (
@@ -28,16 +29,23 @@ export const Home = () => {
         </div>
         <div className="container">
           <p className="about-church">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-            odit harum officiis minima quam cum molestias neque repudiandae
-            tempora fuga porro aperiam molestiae autem eos quas velit doloribus
-            nobis, dolorum beatae? Veniam corporis perspiciatis, atque
-            doloremque harum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            inventore dolorem quod incidunt cupiditate voluptatem accusamus
+            explicabo dignissimos repudiandae hic ipsam, corporis, suscipit cum.
+            Est architecto quod, facere eos dolor cum facilis harum incidunt
+            quos voluptatem. Quas ullam ea hic quod nostrum voluptas sed itaque
+            saepe nam excepturi tempora molestiae dolorem commodi vero, quia
+            obcaecati! Explicabo tempora nisi, voluptates sint vel dolore labore
+            necessitatibus dolores veritatis. Aliquam, reiciendis deleniti?
+            Ipsum, perspiciatis magni voluptatibus corporis maxime reprehenderit
+            nulla aut architecto, nam, quibusdam excepturi sunt ipsa cupiditate
+            iste cum. Aspernatur quas quae ipsa. Amet cum dolores expedita
+            laboriosam magni tenetur ipsam earum.
           </p>
         </div>
         <div className="quick-links">
           <Link to="/about">
-            <button className="about-btn btn">About Us</button>
+            <button className="about-btn btn">More About Us</button>
           </Link>
           <Link to="/">
             <button className="house-btn btn"> House Fellowship </button>
@@ -47,13 +55,8 @@ export const Home = () => {
           </Link>
         </div>
       </section>
-      <section className="third-section">
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
+
+      <Quicklink />
     </div>
   );
 };

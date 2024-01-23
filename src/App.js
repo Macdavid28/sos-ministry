@@ -1,16 +1,16 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./components/Home";
-import { Events } from "./components/Events";
-import { Blog } from "./components/Blog";
-import { About } from "./components/About";
+import { Home } from "./components/Home/Home";
+import { Events } from "./components/Events/Events";
+import { Blog } from "./components/Blog/Blog";
+import { About } from "./components/About/About";
 import { Testimonies } from "./components/Testimonies";
 import TopScrollButton from "./components/TopScrollButton/TopScrollButton";
-import { Contact } from "./components/Contact";
-import Navbar from "./components/Navbar";
+import { Contact } from "./components/Contact/Contact";
+import Navbar from "./components/Navbar/Navbar";
 import { Social } from "./components/Socialmedia";
-import { Giving } from "./components/Giving";
-import { Branches } from "./components/Branches";
+import { Giving } from "./components/Giving/Giving";
+import { Branches } from "./components/Branches/Branches";
 
 function App() {
   return (

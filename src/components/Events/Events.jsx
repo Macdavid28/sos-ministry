@@ -1,4 +1,4 @@
-import bannerImage from "../assets/banner.jpg";
+import bannerImage from "./assets/banner.jpg";
 import "./events.css";
 export const Events = () => {
   return (

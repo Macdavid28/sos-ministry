@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import bannerImage from "../assets/banner.jpg";
-import daddy from "../assets/daddy.jpg";
+import bannerImage from "./assets/banner.jpg";
+import daddy from "./assets/daddy.jpg";
 import "./about.css";
 export const About = () => {
   return (

@@ -1,0 +1,53 @@
+/* Carousel.css */
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.active {
+  transform: translateX(0);
+}
+
+/* Optional: Add media query for mobile responsiveness */
+@media (max-width: 600px) {
+  .arrow {
+    font-size: 20px;
+  }
+}
