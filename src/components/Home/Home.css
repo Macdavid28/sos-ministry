@@ -5,13 +5,6 @@
   --black: #000;
   --gray: #333;
 }
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
 .bannerImage {
   width: 100%;
   height: auto;
@@ -103,6 +96,7 @@
   color: white;
   background-color: var(--orange);
   width: 200px;
+  padding: 14px;
   border: 1px solid var(--orange);
   border-radius: 5px;
   cursor: pointer;
@@ -114,6 +108,7 @@
   border: 1px solid var(--orange);
   border-radius: 5px;
   cursor: pointer;
+  padding: 14px;
   width: 200px;
 }
 .btn:hover {

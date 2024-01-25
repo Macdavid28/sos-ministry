@@ -8,15 +8,9 @@ const card = [
     image: bannerImage,
   },
   {
-    id: 1,
-    name: "We Intercede",
-    desc: "Prayer Request",
-    image: bannerImage,
-  },
-  {
-    id: 1,
-    name: "We Intercede",
-    desc: "Prayer Request",
+    id: 2,
+    name: "We're grateful",
+    desc: "Share Testimonies",
     image: bannerImage,
   },
 ];
@@ -33,9 +27,8 @@ const Quicklink = () => {
               <div className="text">
                 <p> {service.name} </p>
                 <h2> {service.desc} </h2>
-                <button className="pray-btn" >Let's Pray</button>
+                <button className="pray-btn">Let's Pray</button>
               </div>
-
             </div>
           ))}
         </div>
