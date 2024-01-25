@@ -1,4 +1,5 @@
 import bannerImage from "./assets/banner.jpg";
+import aboutImage from "./assets/about.jpg";
 import "./quicklink.css";
 const card = [
   {
@@ -6,12 +7,14 @@ const card = [
     name: "We Intercede",
     desc: "Prayer Request",
     image: bannerImage,
+    btn: "Lets Pray",
   },
   {
     id: 2,
     name: "We're grateful",
     desc: "Share Testimonies",
-    image: bannerImage,
+    image: aboutImage,
+    btn: "Share With Us",
   },
 ];
 const Quicklink = () => {
@@ -22,12 +25,12 @@ const Quicklink = () => {
           {card.map((service) => (
             <div className="content" key={service.id}>
               <div className="image">
-                <img src={service.image} alt="ima" />
+                <img src={service.image} alt="Congregation" />
               </div>
               <div className="text">
                 <p> {service.name} </p>
                 <h2> {service.desc} </h2>
-                <button className="pray-btn">Let's Pray</button>
+                <button className="link-btn">{service.btn}</button>
               </div>
             </div>
           ))}

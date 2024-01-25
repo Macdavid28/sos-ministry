@@ -4,6 +4,7 @@
   --white: #fff;
   --black: #000;
   --gray: #333;
+  --font-family: "Poppins", sans-serif;
 }
 .bannerImage {
   width: 100%;
@@ -17,6 +18,7 @@
   position: absolute;
   top: 70%;
   left: 50%;
+  font-family: var(--font-family);
   transform: translate(-50%, -30%);
 }
 .sermon .sermon-heading {
@@ -29,10 +31,11 @@
 }
 .watch-button {
   width: 250px;
-  height: 60px;
-  border: 2px solid var(--orange);
-  border-radius: 12px;
-  background-color: var(--orange);
+  padding: 14px;
+  border: 1px solid var(--orange);
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #e46b0a 0%, var(--orange) 100%);
   cursor: pointer;
 }
 .watch-button:hover {
@@ -57,9 +60,12 @@
   line-height: 50px;
   background-color: var(--gray);
   color: var(--white);
+  font-family: var(--font-family);
+  height: 70vh;
 }
 .welcome-section {
-  padding-top: 40px;
+  padding-top: 50px;
+
   text-align: center;
   position: relative;
   width: 100%;
@@ -85,6 +91,7 @@
   max-width: 800px;
   word-spacing: 2px;
   margin-bottom: 20px;
+  text-align: left;
 }
 .quick-links {
   padding-top: 20px;
@@ -92,9 +99,14 @@
   gap: 80px;
   justify-content: center;
 }
+button {
+  font-family: var(--font-family);
+  font-size: 18px;
+}
 .about-btn {
   color: white;
-  background-color: var(--orange);
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #e46b0a 0%, var(--orange) 100%);
   width: 200px;
   padding: 14px;
   border: 1px solid var(--orange);
@@ -104,7 +116,8 @@
 .house-btn,
 .branch-btn {
   color: white;
-  background-color: var(--orange);
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #e46b0a 0%, var(--orange) 100%);
   border: 1px solid var(--orange);
   border-radius: 5px;
   cursor: pointer;
@@ -115,20 +128,35 @@
   border: 2px solid var(--white);
   background: transparent;
 }
-
+@media (max-width: 1224px) {
+  .sermon {
+    top: 50%;
+  }
+}
 @media (max-width: 1024px) {
   .sermon {
-    top: 30%;
+    top: 25%;
   }
 
   .watch-button {
-    width: 200px;
-    height: 50px;
+    width: 250px;
+    height: 70px;
     font-size: 18px;
+    padding: 14px;
   }
-
+  .welcome-message-section {
+    height: 50vh;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
   .container .about-church {
     width: 80%;
+    text-align: left;
   }
 
   .quick-links {
@@ -138,7 +166,12 @@
   .about-btn,
   .house-btn,
   .branch-btn {
-    width: 150px;
+    width: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .welcome-message-section {
+    height: 45vh;
   }
 }
 @media (max-width: 768px) {
@@ -176,9 +209,10 @@
   .container .about-church {
     font-size: 18px;
     line-height: 25px;
-    max-width: 490px;
+    max-width: 600px;
     word-spacing: 4px;
     margin-bottom: 20px;
+    text-align: left;
   }
 
   .quick-links {
@@ -190,5 +224,53 @@
   .branch-btn {
     padding: 15px;
     width: 180px;
+  }
+}
+
+@media (max-width: 468px) {
+  .bannerImage {
+    height: 70vh !important ;
+  }
+  .sermon {
+    top: 30%;
+    line-height: 50px;
+  }
+  .sermon .sermon-heading {
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  .sermon .sermon-topic {
+    font-size: 40px;
+  }
+  .watch-button {
+    height: 60px;
+  }
+  .church-name {
+    font-size: 35px !important;
+    font-weight: lighter !important;
+    height: 75px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+  }
+  .welcome-message-section {
+    height: 85vh;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .container .about-church {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 950px;
+    word-spacing: 4px;
+  }
+  .quick-links {
+    display: grid;
   }
 }

@@ -1,3 +1,6 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +18,7 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -30%);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
   color: white;
 }
 .abt-msg h1 {
@@ -25,9 +28,26 @@
   font-size: 20px;
   padding: 15px;
   font-weight: bold;
+  font-family: var(--font-family);
+}
+.abt-writeup {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .abt-writeup h1 {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   font-size: 30px;
+  word-spacing: 3px;
+}
+
+.abt-writeup p {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 700px;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: left !important;
 }

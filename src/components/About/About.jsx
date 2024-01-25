@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import bannerImage from "./assets/banner.jpg";
+import bannerImage from "./assets/about.jpg";
 import "./about.css";
+import VisionMission from "./VisionAndMission";
 export const About = () => {
   return (
     <div>
@@ -12,7 +13,6 @@ export const About = () => {
         </div>
         <div className="abt-writeup">
           <h1>
-            {" "}
             Welcome To <br /> Sanctuary Of Solution Ministry{" "}
           </h1>
           <p>
@@ -20,6 +20,7 @@ export const About = () => {
             change. The sanctuary dream; a divine vision ; a divine vision,
             given to the set man Pastor Olanrewaju Thomas, started off with just
             a handful of people.
+            <br /> <br />
             <p>
               Over the years, proving that with faith, determination, focus and
               the right team, anything is possible, what started with just a
@@ -31,6 +32,7 @@ export const About = () => {
           </p>
         </div>
       </div>
+      <VisionMission />
     </div>
   );
 };
