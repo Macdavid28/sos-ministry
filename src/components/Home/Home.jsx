@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import bannerImage from "./assets/banner.jpg";
 import "./Home.css";
 import Quicklink from "./quicklink";
-import CardCarousel from "./CardCarousel";
+
 
 export const Home = () => {
   return (
