@@ -1,5 +1,6 @@
-import bannerImage from "./assets/banner.jpg";
-import aboutImage from "./assets/about.jpg";
+import bannerImage from "./assets/pray.jpg";
+import aboutImage from "./assets/baptism.jpg";
+import counselImage from "./assets/congregation.jpg";
 import "./quicklink.css";
 const card = [
   {
@@ -15,6 +16,13 @@ const card = [
     desc: "Share Testimonies",
     image: aboutImage,
     btn: "Share With Us",
+  },
+  {
+    id: 3,
+    name: "We Listen",
+    desc: "Guidance & Counselling",
+    image: counselImage,
+    btn: "Talk To Us",
   },
 ];
 const Quicklink = () => {

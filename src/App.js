@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { Social } from "./components/Socialmedia";
 import { Giving } from "./components/Giving/Giving";
 import { Branches } from "./components/Branches/Branches";
+import Appy from "./components/Contact/Appy";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         </Routes>
       </Router>
       <TopScrollButton />
+      <Appy />
     </div>
   );
 }

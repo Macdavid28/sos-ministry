@@ -8,7 +8,12 @@ export const Home = () => {
   return (
     <div className="home">
       <div className="hero-container">
-        <img src={aboutImage} alt="BannerImage" className="bannerImage" />
+        <img
+          src={aboutImage}
+          alt="BannerImage"
+          className="bannerImage"
+          loading="lazy"
+        />
         <div className="sermon">
           <p className="sermon-heading">Latest Teaching</p>
           <h2 className="sermon-topic"> 3 Keys A Christian must have</h2>

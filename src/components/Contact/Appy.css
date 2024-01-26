@@ -1,0 +1,22 @@
+.carousel-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .card {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: #007bff;
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #0056b3;
+  }

@@ -1,0 +1,40 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  .card-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .card.active {
+    transform: translateX(0);
+  }
+
+  .arrow-button {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+
+  .arrow-button:hover {
+    background-color: #0056b3;
+  }

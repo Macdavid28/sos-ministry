@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
-import bannerImage from "./assets/about.jpg";
+import bannerImage from "./assets/church.jpg";
+
 import "./about.css";
+
 import VisionMission from "./VisionAndMission";
 export const About = () => {
   return (
     <div>
       <div className="hero-section">
-        <img src={bannerImage} alt="Banner" className="bannerImage" />
+        <img src={bannerImage} alt="Banner" className="banner" />
         <div className="abt-msg">
           <h1>About Church</h1>
           <p>We exist to lead the people of God back to him.</p>

@@ -1,4 +1,4 @@
-import bannerImg from "./assets/banner.jpg";
+import familyImage from "./assets/famila.jpg";
 import aboutImg from "./assets/about.jpg";
 
 import "./vision.css";
@@ -9,7 +9,7 @@ const info = [
     content:
       "To liberate men through the undiluted word of God and prayer in order to be enlisted in the end time army of God.",
     secondContent: "To promote the truth of the Gospel",
-    img: bannerImg,
+    img: familyImage,
   },
   {
     id: 2,

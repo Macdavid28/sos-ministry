@@ -1,31 +1,37 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; // Import EmailJS library
-
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 export const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Send the email using EmailJS
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text);
-        // Reset form fields after successful submission
-        setName('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          console.log(result.text);
+          // Reset form fields after successful submission
+          setName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      style={{ textAlign: "center", }}
+    >
       <div>
         <label htmlFor="name">Name:</label>
         <input
@@ -68,4 +74,3 @@ export const Contact = () => {
     </form>
   );
 };
-
