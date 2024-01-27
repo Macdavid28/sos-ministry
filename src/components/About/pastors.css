@@ -1,0 +1,84 @@
+.pastor-card {
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: rgba(221, 221, 221, 1);
+  padding: 50px;
+  border: none;
+}
+.pastor-card h1 {
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  font-size: 40px;
+}
+.pastor-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.pastor-card-grid .pastor-card-content {
+  position: relative;
+}
+.pastor-card-grid .pastor-card-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+.pastor-card-grid .pastor-card-content .text {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+}
+.pastor-card-grid .pastor-card-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+.pastor-card img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 12px;
+}
+@media (max-width: 1024px) {
+  .pastor-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pastor-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 468px) {
+  .pastor-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 420px) {
+  .pastor-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pastor-card-content h1{
+    font-size: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .pastor-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pastor-card  h1{
+    font-size: 35px;
+  }
+}

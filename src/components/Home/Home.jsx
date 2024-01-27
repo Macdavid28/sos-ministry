@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import aboutImage from "./assets/about.jpg";
 
 import "./Home.css";
+import "./home-responsive.css";
 import Quicklink from "./quicklink";
+// import { Events } from "../Events/Events";
 
 export const Home = () => {
   return (

@@ -1,0 +1,42 @@
+@media (max-width: 1024px) {
+  .info-text {
+    padding: 25px;
+  }
+  .info-text h2 {
+    padding: 10px;
+  }
+  .info-text p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .info-text {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 468px) {
+  .info-text {
+    padding: 30px;
+  }
+  .info-text p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .info-section {
+    margin-top: 200px;
+    display: grid;
+  }
+}
+@media (max-width: 390px) {
+  .info-section {
+    margin-top: 250px;
+    display: grid;
+  }
+  .info-text {
+    padding: 50px;
+  }
+  .info-text p {
+    font-size: 22px;
+  }
+}

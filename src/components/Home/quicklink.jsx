@@ -1,8 +1,9 @@
 import bannerImage from "./assets/pray.jpg";
 import aboutImage from "./assets/baptism.jpg";
-import counselImage from "./assets/congregation.jpg";
+
 import "./quicklink.css";
-const card = [
+import "./quicklink-responsive.css";
+const data = [
   {
     id: 1,
     name: "We Intercede",
@@ -21,7 +22,7 @@ const card = [
     id: 3,
     name: "We Listen",
     desc: "Guidance & Counselling",
-    image: counselImage,
+    image: bannerImage,
     btn: "Talk To Us",
   },
 ];
@@ -30,7 +31,7 @@ const Quicklink = () => {
     <div>
       <section className="third-section">
         <div className="quick-link">
-          {card.map((service) => (
+          {data.map((service) => (
             <div className="content" key={service.id}>
               <div className="image">
                 <img src={service.image} alt="Congregation" />

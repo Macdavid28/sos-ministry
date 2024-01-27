@@ -195,7 +195,7 @@
 
   .navbar-logo {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 20px;
     font-size: 1.5rem;
     color: var(--black);
@@ -245,7 +245,7 @@
   .menu-icon {
     display: block;
     position: absolute;
-    padding-top: 3px;
+    padding-top: 30px;
     right: 20px;
     z-index: 999;
   }

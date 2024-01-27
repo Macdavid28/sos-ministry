@@ -1,3 +1,59 @@
-.bannerImage {
+/* .carousel-container {
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  padding:20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  background-color: #333;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #0056b3;
+} */
+
+.card-slider-container {
   width: 100%;
+  display: block;
+  gap: 30px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #333;
+  height: 300px;
+  margin: 10px;
+}
+.card h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.card p {
+  font-family: "Poppins", sans-serif;
+}
+.card .event-date,
+.event-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.slick-prev,
+.slick-next {
+  display: none;
 }

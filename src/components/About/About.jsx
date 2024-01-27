@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import bannerImage from "./assets/church.jpg";
 
 import "./about.css";
+import "./about-responsive.css";
 
 import VisionMission from "./VisionAndMission";
+import Pastors from "./Pastors";
+
 export const About = () => {
   return (
     <div>
@@ -35,6 +38,7 @@ export const About = () => {
         </div>
       </div>
       <VisionMission />
+      <Pastors />
     </div>
   );
 };

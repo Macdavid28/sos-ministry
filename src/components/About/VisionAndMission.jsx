@@ -2,6 +2,7 @@ import familyImage from "./assets/famila.jpg";
 import aboutImg from "./assets/about.jpg";
 
 import "./vision.css";
+import "./vision-responsive.css"
 const info = [
   {
     id: 1,
