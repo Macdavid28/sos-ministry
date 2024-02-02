@@ -389,14 +389,27 @@
     font-size: 1.2rem;
   }
   .navbar-logo img {
-    width: 100%;
-    height: 70px;
+    width: 100% !important;
+    height: 85px !important;
   }
   .nav-item {
     height: 60px;
   }
 }
-
+@media (max-width: 428px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar-logo {
+    top: 15px;
+    left: 15px;
+    font-size: 1.2rem;
+  }
+  .navbar-logo img {
+    width: 100%;
+    height: 70px;
+  }
+}
 /* Hamburger menu styles for Apple Watch screen */
 @media screen and (max-width: 394px) {
   .navbar {

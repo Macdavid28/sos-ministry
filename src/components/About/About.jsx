@@ -14,7 +14,7 @@ export const About = () => {
         <img src={bannerImage} alt="Banner" className="banner" />
         <div className="abt-msg">
           <h1>About Church</h1>
-          <p>We exist to lead the people of God back to him.</p>
+          <p>The people are the church.</p>
         </div>
         <div className="abt-writeup">
           <h1>
