@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "./assets/Logo.jpg";
-import "./Navbar.css"; 
+import "./Navbar.css";
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -101,15 +101,7 @@ const Navbar = () => {
               Branches
             </Link>
           </li>
-          <li
-            className={`nav-item ${
-              location.pathname === "calc" ? "active" : ""
-            }`}
-          >
-            <Link to="calc" className="nav-links">
-              Calc
-            </Link>
-          </li>
+ 
         </ul>
       </div>
     </nav>

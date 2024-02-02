@@ -11,7 +11,6 @@ import Navbar from "./components/Navbar/Navbar";
 import { Social } from "./components/Socialmedia";
 import { Giving } from "./components/Giving/Giving";
 import { Branches } from "./components/Branches/Branches";
-import Calc from "./components/Calc";
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
           <Route path="/socialmedia" element={Social} />
           <Route path="/giving" element={<Giving />} />
           <Route path="/branches" element={<Branches />} />
-          <Route path="/calc" element={<Calc />} />
         </Routes>
       </Router>
       <TopScrollButton />
